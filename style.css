@@ -1,0 +1,96 @@
+body {
+    background-color: #36393e;
+    color: #fff; /* Set text color to white for better visibility */
+    font-family: sans-serif; /* Use a sans-serif font */
+    display: flex; /* Center content vertically */
+    flex-direction: column; 
+    min-height: 100vh; /* Make body take up full viewport height */
+    justify-content: center; 
+}
+
+.gameboard {
+    border: 5px #7289da solid;
+    border-radius: 1%;
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column; /* Make gameboard a column */
+    align-items: center; /* Center items vertically */
+}
+
+.tableMain {
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin-right: 20px; 
+}
+
+th {
+    font-size: 1000%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px #7289da solid;
+    border-radius: 5%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.info {
+    border: 5px #7289da solid;
+    border-radius: 1%;
+    display: flex; /* Make info container a flexbox */
+    justify-content: space-between; /* Space images evenly */
+    align-items: center; /* Center images vertically */
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+#myface, #github {
+    border-radius: 50%;
+    width: 50px; /* Set image size */
+    height: 50px;
+}
+
+#TITLE {
+    font-size: 50px;
+    text-align: center; /* Center title */
+    margin-bottom: 20px; 
+}
+
+#about {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#ver {
+    text-align: left; 
+    margin-top: 20px; 
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1000px) { 
+    .gameboard {
+        min-width: auto; 
+    }
+    .tableMain {
+        margin-left: 0; 
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    th {
+        font-size: 500%; 
+    }
+    .info {
+        flex-direction: column; /* Stack images on smaller screens */
+        align-items: center; /* Center images vertically */
+    }
+}
+
+@media screen and (max-width: 480px) { 
+    th {
+        font-size: 300%; 
+    }
+}
